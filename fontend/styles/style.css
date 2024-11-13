@@ -30,6 +30,13 @@ h3 {
   margin-bottom: 10px;
 }
 
+#intro h2 {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 1), -1px -1px 2px rgba(255, 255, 255, 1);
+}
+
 #intro h3 {
   color: #00c7ff;
   font-size: 30px;
@@ -44,6 +51,7 @@ h3 {
   border: 2px solid var(--blue-color);
   cursor: pointer;
   color: var(--blue-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 #botonContacto:hover {
@@ -140,20 +148,33 @@ h3 {
 }
 .carta {
   width: 400px;
-  height: auto;
-  max-height: auto;
+  height: 440px;
+  max-height: 600px;
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
   background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
 }
 
 .cartaimagen img {
   width: 400px;
 }
 
+.cartaContenido {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+}
+
 .cartaContenido p {
   color: var(--font-color);
+}
+
+.fondoCarta {
+  margin-top: auto;
 }
 
 .imgDiv {
@@ -169,27 +190,36 @@ h3 {
 
 #htmlImg:hover {
   transform: translateY(-5px);
-  content: url("../../assets/svg/html hover.svg");
+  content: url("../assets/svg/html hover.svg");
 }
 
 #cssImg:hover {
   transform: translateY(-5px);
-  content: url("../../assets/svg/css hover.svg");
+  content: url("../assets/svg/css hover.svg");
 }
 
 #javascriptImg:hover {
   transform: translateY(-5px);
-  content: url("../../assets/svg/javascript hover.svg");
+  content: url("../assets/svg/javascript hover.svg");
 }
 
 #nodejsImg:hover {
   transform: translateY(-5px);
-  content: url("../../assets/svg/nodejs hover.svg");
+  content: url("../assets/svg/nodejs hover.svg");
 }
 
 #mysqlImg:hover {
   transform: translateY(-5px);
-  content: url("../../assets/svg/mysql hover.svg");
+  content: url("../assets/svg/mysql hover.svg");
+}
+
+.botonProyecto a {
+  text-decoration: none;
+  color: var(--blue-color);
+}
+
+.botonProyecto a:hover {
+  color: var(--background-color);
 }
 
 .botonProyecto {
@@ -200,6 +230,10 @@ h3 {
   color: var(--blue-color);
   cursor: pointer;
   border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .botonProyecto:hover {
@@ -248,52 +282,135 @@ h3 {
 
 .logos {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: center; 
-  gap: 20px; 
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   margin: 20px 0px 40px 0px;
 }
 
 .contenedorHabilidades {
-  width: 120px; 
+  width: 120px;
   height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transition: transform 0.3s ease; /
+  transition: transform 0.3s ease;
 }
 
 .contenedorHabilidades:hover {
-  transform: translateY(-5px); 
-  transform: scale(1.2); 
-  filter: brightness(1.2); 
+  transform: translateY(-5px);
+  transform: scale(1.2);
+  filter: brightness(1.2);
 }
 
 .imagenPrueba {
-  width: 60px; 
+  width: 60px;
   height: 60px;
   margin-bottom: 8px;
 }
 
 .contenedorHabilidades p {
   color: var(--font-color);
-  font-size: 20px; 
+  font-size: 20px;
   text-align: center;
 }
 
 /*Contactame*/
 
-#contactameDiv{
+#contactameDiv {
   width: 100%;
   max-width: 900px;
   margin: auto;
   height: 500px;
   display: flex;
-
+  flex-direction: column;
 }
 
-#contactameDiv h3{
+#contactameDiv h3 {
   font-size: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+#contactameMain {
+  display: flex;
+}
+
+#redesDiv,
+#forumularioContactoDiv {
+  flex: 1;
+}
+
+#redesDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#redesDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#redesDiv h4 {
+  color: var(--font-color);
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.logoTextoDiv{
+  margin-bottom: 10px;
+}
+
+.redesImg {
+  width: 25px;
+}
+
+.linksRedes {
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+#forumularioContactoDiv h4 {
+  color: var(--font-color);
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+/*Form*/
+#formMain input,
+textarea,
+select {
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+  border-radius: 5px;
+  border: none;
+  background-color: #b6c3cf;
+}
+
+#mensaje {
+  height: 100px;
+  max-height: auto;
+}
+
+#formMain button {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  font-size: var(--size-medium);
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#formMain button:hover {
+  background-color: var(--blue-color);
+  color: var(--background-color);
 }
