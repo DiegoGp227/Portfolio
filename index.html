@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diego Góngora</title>
-    <link rel="stylesheet" href="./fontend/styles/nav.css" />
     <link rel="stylesheet" href="./fontend/styles/global.css" />
     <link rel="stylesheet" href="./fontend/styles/style.css" />
+    <link rel="stylesheet" href="./fontend/styles/nav.css" />
   </head>
   <body>
     <nav>
-      <ul id="links">
+      <ul id="links" class="menu-links">
         <li><a href="#intro">Inicio</a></li>
-        <li><a href="#SobreMiDiv">Sobre Mi</a></li>
+        <li><a href="#SobreMiDiv">Sobre Mí</a></li>
         <li><a href="#misProyectosDiv">Mis Proyectos</a></li>
         <li><a href="#misHabilidadesDiv">Habilidades</a></li>
         <li><a href="#contactameDiv">Contáctame</a></li>
@@ -26,10 +26,12 @@
         <button id="botonContacto">Contáctame!</button>
       </div>
       <div id="imgHome">
-        <img src="./fontend/assets/Home/Mi foto B-N.png" alt="Imagen de perfil" />
+        <img
+          src="./fontend/assets/Home/Mi foto B-N.png"
+          alt="Imagen de perfil"
+        />
       </div>
     </div>
-    <span class="mkdf-team-position">hello <br> word</span>
     <div id="SobreMiDiv">
       <div id="sobreMiTitulo">
         <h3>Sobre mí</h3>
@@ -61,16 +63,28 @@
       <h3>Mis proyectos</h3>
       <div id="proyectos">
         <div class="carta">
-          <div class="cartaimagen">
+          <div class="cartaImagen">
             <img src="./fontend/assets/projects/booklive1.png" alt="" />
           </div>
           <div class="cartaContenido">
             <h3>Booklive</h3>
-            <p>aplicación web para lectores, con validaciones de ususarios</p>
+            <p>
+              Aplicación web para lectores, con el fin de dejar un mensaje en
+              cada libro terminado con frontend y backend funcional a la espera
+              de despliegue.
+            </p>
             <div class="fondoCarta">
               <div class="imgDiv">
-                <img src="./fontend/assets/svg/html black.svg" alt="" id="htmlImg" />
-                <img src="./fontend/assets/svg/css black.svg" alt="" id="cssImg" />
+                <img
+                  src="./fontend/assets/svg/html black.svg"
+                  alt=""
+                  id="htmlImg"
+                />
+                <img
+                  src="./fontend/assets/svg/css black.svg"
+                  alt=""
+                  id="cssImg"
+                />
                 <img
                   src="./fontend/assets/svg/javascript black.svg"
                   alt=""
@@ -81,13 +95,17 @@
                   alt=""
                   id="nodejsImg"
                 />
-                <img src="./fontend/assets/svg/mysql black.svg" alt="" id="mysqlImg" />
+                <img
+                  src="./fontend/assets/svg/mysql black.svg"
+                  alt=""
+                  id="mysqlImg"
+                />
               </div>
               <div class="botonesDiv">
-                <button class="botonProyecto" id="botonUno">Visualizar</button>
+                <!-- <button class="botonProyecto" id="botonUno">Visualizar</button> -->
                 <button
                   class="botonProyecto"
-                  onclick="window.location.href='https://github.com/DiegoGp227/Book-Live'"
+                  onclick="window.open('https://github.com/DiegoGp227/Book-Live', '_blank')"
                 >
                   Código
                 </button>
@@ -96,21 +114,28 @@
           </div>
         </div>
         <div class="carta">
-          <div class="cartaimagen">
+          <div class="cartaImagen">
             <img src="./fontend/assets/projects/Time Track.png" alt="" />
           </div>
           <div class="cartaContenido">
             <h3>Time Track</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Architecto vero ullam, voluptatibus alias eveniet vitae maxime
-              placeat hic aut distinctio, reiciendis dolorem itaque eum
-              provident veritatis sed ipsam similique. Possimus.
+              Aplicacion para llevar seguimiento e integrar funciones de
+              graficas sobre actividades obtenidas con la api de strava a la
+              espera de despliegue.
             </p>
             <div class="fondoCarta">
               <div class="imgDiv">
-                <img src="./fontend/assets/svg/html black.svg" alt="" id="htmlImg" />
-                <img src="./fontend/assets/svg/css black.svg" alt="" id="cssImg" />
+                <img
+                  src="./fontend/assets/svg/html black.svg"
+                  alt=""
+                  id="htmlImg"
+                />
+                <img
+                  src="./fontend/assets/svg/css black.svg"
+                  alt=""
+                  id="cssImg"
+                />
                 <img
                   src="./fontend/assets/svg/javascript black.svg"
                   alt=""
@@ -121,10 +146,71 @@
                   alt=""
                   id="nodejsImg"
                 />
-                <img src="./fontend/assets/svg/mysql black.svg" alt="" id="mysqlImg" />
+                <img
+                  src="./fontend/assets/svg/mysql black.svg"
+                  alt=""
+                  id="mysqlImg"
+                />
               </div>
               <div class="botonesDiv">
-                <button class="botonProyecto" id="botonUno">Visualizar</button>
+                <!-- <button class="botonProyecto" id="botonUno">Visualizar</button> -->
+                <button
+                  class="botonProyecto"
+                  onclick="window.open('https://github.com/DiegoGp227/Book-Live', '_blank')"
+                >
+                  Código
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carta">
+          <div class="cartaImagen">
+            <img src="./fontend/assets/projects/Next Strapper.jpeg" alt="" />
+          </div>
+          <div class="cartaContenido">
+            <h3>Next Stepper</h3>
+            <p>
+              Aplicaion web con el fin de llevar seguimiento a los proyectos
+              personales para dar seguimiento a los mismos, con graficas sobre
+              el avance de las tareas, el backend culmidado, el frontend con
+              reactjs en desarrollo.
+            </p>
+            <div class="fondoCarta">
+              <div class="imgDiv">
+                <img
+                  src="./fontend/assets/svg/html black.svg"
+                  alt=""
+                  id="htmlImg"
+                />
+                <img
+                  src="./fontend/assets/svg/css black.svg"
+                  alt=""
+                  id="cssImg"
+                />
+                <img
+                  src="./fontend/assets/svg/javascript black.svg"
+                  alt=""
+                  id="javascriptImg"
+                />
+                <img
+                  src="./fontend/assets/svg/reactjs black.svg"
+                  alt=""
+                  id="reactjsImg"
+                />
+                <img
+                  src="./fontend/assets/svg/nodejs black.svg"
+                  alt=""
+                  id="nodejsImg"
+                />
+                <img
+                  src="./fontend/assets/svg/mysql black.svg"
+                  alt=""
+                  id="mysqlImg"
+                />
+              </div>
+              <div class="botonesDiv">
+                <!-- <button class="botonProyecto" id="botonUno">Visualizar</button> -->
                 <button
                   class="botonProyecto"
                   onclick="window.open('https://github.com/DiegoGp227/Book-Live', '_blank')"
@@ -223,31 +309,64 @@
       <div id="contactameMain">
         <div id="redesDiv">
           <h4>Mis Redes</h4>
-          <div class="logoTextoDiv">
-            <img src="./fontend/assets/svg/linkedin hover.svg" alt="" class="redesImg"/>
-            <a href="https://linkedin.com/in/diego-gongora-p" target="_blank" class="linksRedes">diego-gongora</a>
-          </div>
-          <div class="logoTextoDiv">
-            <img src="./fontend/assets/svg/github hover.svg" alt="" class="redesImg"/>
-            <a href="https://github.com/DiegoGp227" target="_blank" class="linksRedes">DiegoGp227</a>
-          </div>
-          <div class="logoTextoDiv">
-            <img src="./fontend/assets/svg/gmail hover.svg" alt="" class="redesImg"/>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=diego.gp227@gmail.com" target="_blank" class="linksRedes">diego.gp227@gmail.com</a>
+          <div id="redesMain">
+            <div class="logoTextoDiv">
+              <img
+                src="./fontend/assets/svg/linkedin hover.svg"
+                alt=""
+                class="redesImg"
+              />
+              <a
+                href="https://linkedin.com/in/diego-gongora-p"
+                target="_blank"
+                class="linksRedes"
+                >diego-gongora</a
+              >
+            </div>
+            <div class="logoTextoDiv">
+              <img
+                src="./fontend/assets/svg/github hover.svg"
+                alt=""
+                class="redesImg"
+              />
+              <a
+                href="https://github.com/DiegoGp227"
+                target="_blank"
+                class="linksRedes"
+                >DiegoGp227</a
+              >
+            </div>
+            <div class="logoTextoDiv">
+              <img
+                src="./fontend/assets/svg/gmail hover.svg"
+                alt=""
+                class="redesImg"
+              />
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=diego.gp227@gmail.com"
+                target="_blank"
+                class="linksRedes"
+                >diego.gp227@gmail.com</a
+              >
+            </div>
           </div>
         </div>
         <div id="forumularioContactoDiv">
           <h4>Dejame un mensaje</h4>
           <div id="formMain">
-            <form action="" class="formActivity">
-              <label for=""style="color: aliceblue">Nombre</label>
-              <input type="text">
-  
-              <label for=""style="color: aliceblue">Correo</label>
-              <input type="email">
-  
-              <label for=""style="color: aliceblue" >Mensaje</label>
-              <textarea name="mensaje" id="mensaje"></textarea>
+            <form
+              action="https://formsubmit.co/diego.gp227@gmail.com"
+              method="POST"
+              class="formActivity"
+            >
+              <label for="" style="color: aliceblue">Asunto</label>
+              <input type="text" name="Asunto" />
+
+              <label for="" style="color: aliceblue">Correo</label>
+              <input type="email" name="Correo" />
+
+              <label for="" style="color: aliceblue">Mensaje</label>
+              <textarea name="mensaje" id="mensaje" name="Mensaje"></textarea>
 
               <button type="submit">Enviar</button>
             </form>
@@ -255,5 +374,6 @@
         </div>
       </div>
     </div>
+    <script src="/fontend/scripts/script.js"></script>
   </body>
 </html>
