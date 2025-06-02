@@ -101,8 +101,9 @@ h3 {
   width: 100%;
   max-width: 900px;
   height: 200px;
-  margin-bottom: 50px;
+  padding-top: 50px;
   margin: auto;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -281,10 +282,10 @@ h3 {
 #misHabilidadesDiv {
   width: 100%;
   max-width: 900px;
+  padding: 50px;
   margin: auto;
   height: 400px;
   display: flex;
-  margin-bottom: 100px;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
@@ -349,6 +350,7 @@ h3 {
 #contactameDiv {
   width: 100%;
   max-width: 900px;
+  padding-top: 75px;
   margin: auto;
   height: 500px;
   display: flex;
