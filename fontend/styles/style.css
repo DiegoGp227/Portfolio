@@ -196,34 +196,49 @@ h3 {
   transition: transform 0.6s ease;
 }
 
-#htmlImg:hover {
+.carta:hover .htmlImg {
   transform: translateY(-5px);
   content: url("../assets/svg/html hover.svg");
 }
 
-#cssImg:hover {
+.carta:hover .cssImg {
   transform: translateY(-5px);
   content: url("../assets/svg/css hover.svg");
 }
 
-#javascriptImg:hover {
+.carta:hover .javascriptImg {
   transform: translateY(-5px);
   content: url("../assets/svg/javascript hover.svg");
 }
 
-#reactjsImg:hover {
+.carta:hover .reactjsImg {
   transform: translateY(-5px);
   content: url("../assets/svg/reactjs hover.svg");
 }
 
-#nodejsImg:hover {
+.carta:hover .nodejsImg {
   transform: translateY(-5px);
   content: url("../assets/svg/nodejs hover.svg");
 }
 
-#mysqlImg:hover {
+.carta:hover .bunImg {
+  transform: translateY(-5px);
+  content: url("../assets/svg/bun hover.svg");
+}
+
+.carta:hover .elysiaImg {
+  transform: translateY(-5px);
+  content: url("../assets/svg/elysia\ hover.svg");
+}
+
+.carta:hover .mysqlImg {
   transform: translateY(-5px);
   content: url("../assets/svg/mysql hover.svg");
+}
+
+.carta:hover .astroImg {
+  transform: translateY(-5px);
+  content: url("../assets/svg/astro\ hover.svg");
 }
 
 .botonProyecto a {
