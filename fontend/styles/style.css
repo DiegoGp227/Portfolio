@@ -189,6 +189,7 @@ h3 {
 .imgDiv {
   display: flex;
   justify-content: center;
+  overflow-x: auto;
 }
 
 .imgDiv img {
